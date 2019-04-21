@@ -54,8 +54,10 @@
         'o' , 'p' , 'q' , 'r' , 's' , 't' ,
         'u' , 'v' , 'w' , 'x' , 'y' , 'z'
     };
-    //二进制补码形式表示int类型值所需要的字节数
+    //二进制补码形式表示int类型值所需要的位数
     public static final int SIZE = 32;
+    //二进制补码形式表示int类型值所需要的字节数
+    public static final int BYTES = SIZE / Byte.SIZE;
     //序列化
     private static final long serialVersionUID = 1360826667806852920L;
 ```

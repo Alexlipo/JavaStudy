@@ -43,8 +43,10 @@ public final class Short extends Number implements Comparable<Short> {...}
     public static final short   MAX_VALUE = 32767;
     //类实例
     public static final Class<Short>    TYPE = (Class<Short>) Class.getPrimitiveClass("short");
-    //二进制补码形式表示byte类型值所需要的字节数
+    //二进制补码形式表示short类型值所需要的位数
     public static final int SIZE = 16;
+    //二进制补码形式表示short类型值所需要的字节数
+    public static final int BYTES = SIZE / Byte.SIZE;
     //序列化
     private static final long serialVersionUID = 7515723908773894738L;
 ```

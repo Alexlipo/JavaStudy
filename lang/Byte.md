@@ -43,8 +43,10 @@ public final class Byte extends Number implements Comparable<Byte> {}
     public static final byte   MAX_VALUE = 127;
     //类实例
     public static final Class<Byte>     TYPE = (Class<Byte>) Class.getPrimitiveClass("byte");
-    //二进制补码形式表示byte类型值所需要的字节数
+    //二进制补码形式表示byte类型值所需要的位数
     public static final int SIZE = 8;
+    //二进制补码形式表示byte类型值所需要的字节数
+    public static final int BYTES = SIZE / Byte.SIZE;
     //序列化
     private static final long serialVersionUID = -7183698231559129828L;
 ```
